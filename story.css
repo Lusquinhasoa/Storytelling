@@ -1,10 +1,71 @@
 body{
   background-color: rgb(185, 177, 177);
   display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ 
+  font-family: verdana;
 }
+
+/*criação do livro para o texto*/
+.center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  transform: translate(-20%, -0%);
+}
+
+.page {
+  width: 580px;
+  height: 680px;
+  padding: 5px;
+  background: #FFF;
+  border-left: 30px solid #197ae9;
+  transform: rotate(-1deg) scale(.7);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.8)
+}
+
+.page h2 {
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+  font-size: 25px;
+  color: #000000
+}
+
+.page p {
+  margin: 0;
+  padding: 0;
+  text-align: justify
+}
+
+.page:before {
+  content: "";
+  width: 30px;
+  height: 100%;
+  background: #000d14;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewY(-45deg) translate(-57px, -43px) 
+}
+
+.page:after {
+  content: "";
+  width: 106%;
+  height: 30px;
+  background: #CCC;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: skewX(-45deg) translate(-11px, 30px) 
+}
+
+
+/*estilização do botão*/
 .neon-bt {
 
   position: relative;
@@ -16,11 +77,10 @@ body{
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.2s;
-  margin-top: 40px;
   letter-spacing: 4px;
   align-items:center ;
   justify-content: center;
-  margin-left: 200px;
+  margin-left: 180px;
 }
 
  
@@ -44,14 +104,9 @@ body{
 .neon-bt span {
 
   position: absolute;
-
   display: block;
 
 }
-
- 
-
- 
 
 /*span 1*/
 
@@ -132,8 +187,6 @@ body{
 
 /*span 3*/
 
- 
-
 .neon-bt span:nth-child(3) {
 
   bottom: 0;
@@ -152,8 +205,6 @@ body{
 
 }
 
- 
-
 @keyframes btn-anim3 {
 
   0% {
@@ -170,12 +221,7 @@ body{
 
 }
 
- 
-
 /*span 4*/
-
- 
-
 .neon-bt span:nth-child(4) {
 
   bottom: -100%;
