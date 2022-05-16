@@ -5,7 +5,8 @@ function typeWriter(elemento) {
       setTimeout(() => elemento.innerHTML += letra, 75 * i);
     });
   }
-  const titulo = document.querySelector('h4');
+  const titulo = document.querySelector('p');
   
-typeWriter(document.querySelector('h4'));
+typeWriter(document.querySelector('p'));
+
 
