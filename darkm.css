@@ -1,0 +1,79 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(185, 177, 177);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+.dark {
+  background: black;
+}
+
+header .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+ header .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  
+  }
+  
+  
+  header .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+header .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+header .fa-moon {
+    color: #f1c40f;
+  }
+  
+ header .fa-sun {
+    color: #f39c12;
+  }
+
+.neon-bt{
+    margin-top: -80px;
+    display: inline-block;
+}
